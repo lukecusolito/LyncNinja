@@ -1,4 +1,6 @@
-﻿namespace LyncNinja.Domain.Models.Dto
+﻿using System;
+
+namespace LyncNinja.Domain.Models.Dto
 {
     public class LinkedResourceDto
     {
@@ -6,5 +8,6 @@
         public string Key { get; set; }
         public string Url { get; set; }
         public string EncodedUrl { get; set; }
+        public DateTime Created { get; set; }
     }
 }
