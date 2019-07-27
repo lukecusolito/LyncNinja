@@ -5,6 +5,11 @@ namespace LyncNinja.Data.EntityModels
     public class LyncNinjaContext : DbContext
     {
         public LyncNinjaContext(DbContextOptions<LyncNinjaContext> options) : base(options) { }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder
+                .UseLazyLoadingProxies();
+        }
 
         public DbSet<LinkedResource> LinkedResources { get; set; }
 

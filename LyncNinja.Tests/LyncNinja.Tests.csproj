@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LyncNinja.API\LyncNinja.API.csproj" />
+    <ProjectReference Include="..\LyncNinja.Common\LyncNinja.Common.csproj" />
     <ProjectReference Include="..\LyncNinja.Domain\LyncNinja.Domain.csproj" />
     <ProjectReference Include="..\LyncNinja.Services.Interfaces\LyncNinja.Services.Interfaces.csproj" />
   </ItemGroup>

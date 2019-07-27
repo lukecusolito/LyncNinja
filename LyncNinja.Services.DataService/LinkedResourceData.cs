@@ -12,11 +12,11 @@ namespace LyncNinja.Services.DataService
     {
         #region Fields
         private readonly LyncNinjaContext _dbContext;
-        private readonly ILogger<LinkedResource> _logger;
+        private readonly ILogger<LinkedResourceData> _logger;
         #endregion
 
         #region Constructor
-        public LinkedResourceData(LyncNinjaContext dbContext, ILogger<LinkedResource> logger)
+        public LinkedResourceData(LyncNinjaContext dbContext, ILogger<LinkedResourceData> logger)
         {
             _dbContext = dbContext;
             _logger = logger;
