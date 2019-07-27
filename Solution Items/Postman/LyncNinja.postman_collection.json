@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "954c1e0b-c59f-4ca5-93f3-407c1a9f1296",
+		"name": "LyncNinja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Diagnostics",
+			"item": [
+				{
+					"name": "Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Diagnostics/Status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Diagnostics",
+								"Status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Link",
+			"item": [
+				{
+					"name": "Create Link",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Url\": \"google.com\"\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/Link",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Link"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Link",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Link/MQ",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Link",
+								"MQ"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
