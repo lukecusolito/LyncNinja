@@ -61,6 +61,15 @@ namespace LyncNinja.Domain.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The link provided is invalid..
+        /// </summary>
+        internal static string INVALID_LINK {
+            get {
+                return ResourceManager.GetString("INVALID_LINK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The request is not valid. Please fix the errors and try again..
         /// </summary>
         internal static string REQUEST_VALIDATION_ERRORS {

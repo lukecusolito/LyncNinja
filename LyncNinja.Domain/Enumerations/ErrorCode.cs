@@ -3,6 +3,7 @@
     public enum ErrorCode
     {
         UNEXPECTED_ERROR,
-        REQUEST_VALIDATION_ERRORS
+        REQUEST_VALIDATION_ERRORS,
+        INVALID_LINK
     }
 }

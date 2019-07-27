@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="INVALID_LINK" xml:space="preserve">
+    <value>The link provided is invalid.</value>
+  </data>
   <data name="REQUEST_VALIDATION_ERRORS" xml:space="preserve">
     <value>The request is not valid. Please fix the errors and try again.</value>
   </data>
