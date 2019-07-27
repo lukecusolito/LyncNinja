@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using LyncNinja.Services.Interfaces.Data;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LyncNinja.Services.DataService
 {
@@ -13,6 +14,9 @@ namespace LyncNinja.Services.DataService
 
         private static IServiceCollection AddDependencies(this IServiceCollection services)
         {
+            services.AddTransient<IDataService, DataService>();
+            services.AddTransient<ILinkedResourceData, LinkedResourceData>();
+
             return services;
         }
     }
