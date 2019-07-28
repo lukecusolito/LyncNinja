@@ -353,7 +353,7 @@ MigrationBackup/
 # Vue config
 .DS_Store
 node_modules
-/dist
+*/dist
 .env.local
 .env.*.local
 npm-debug.log*
