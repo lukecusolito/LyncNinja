@@ -1,0 +1,154 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>LyncNinja.UI</Name>
+    <RootNamespace>LyncNinja.UI</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a65ca397-7449-4fac-b61f-fd483a163aaf</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>node_modules\@vue\cli-service\bin\vue-cli-service.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>8080</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+    <ScriptArguments>serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+      npm run build
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="src\" />
+    <Folder Include="src\api\" />
+    <Folder Include="src\api\config\" />
+    <Folder Include="src\api\endpoints\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\custom\" />
+    <Folder Include="src\components\custom\AppDescription\" />
+    <Folder Include="src\components\custom\AppTitle\" />
+    <Folder Include="src\components\custom\Encoder\" />
+    <Folder Include="src\components\custom\GitHub\" />
+    <Folder Include="src\components\custom\LinkedIn\" />
+    <Folder Include="src\components\custom\Ninja\" />
+    <Folder Include="src\components\generic\" />
+    <Folder Include="src\components\generic\Button\" />
+    <Folder Include="src\components\generic\Input\" />
+    <Folder Include="src\components\generic\Label\" />
+    <Folder Include="src\components\generic\SectionContainer\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="src\pages\PageHome\" />
+    <Folder Include="src\pages\PageHome\sections\" />
+    <Folder Include="src\pages\PageHome\sections\BottomSection\" />
+    <Folder Include="src\pages\PageHome\sections\FooterSection\" />
+    <Folder Include="src\pages\PageHome\sections\TopSection\" />
+    <Folder Include="src\pages\PageUrlResolver\" />
+    <Folder Include="src\router\" />
+    <Folder Include="src\utils\" />
+    <Folder Include="src\utils\constants\" />
+    <Folder Include="src\utils\constants\components\" />
+    <Folder Include="src\utils\constants\pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="babel.config.js" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="README.md" />
+    <Content Include="src\api\base-class.js" />
+    <Content Include="src\api\config\axios.js" />
+    <Content Include="src\api\endpoints\link.js" />
+    <Content Include="src\api\index.js" />
+    <Content Include="src\App.vue" />
+    <Content Include="src\assets\github-icon.jpg" />
+    <Content Include="src\assets\linkedin-icon.png" />
+    <Content Include="src\assets\ninja.png" />
+    <Content Include="src\components\custom\AppDescription\index.vue" />
+    <Content Include="src\components\custom\AppTitle\index.vue" />
+    <Content Include="src\components\custom\Encoder\.eslintrc.js" />
+    <Content Include="src\components\custom\Encoder\index.vue" />
+    <Content Include="src\components\custom\GitHub\index.vue" />
+    <Content Include="src\components\custom\LinkedIn\index.vue" />
+    <Content Include="src\components\custom\Ninja\config.json" />
+    <Content Include="src\components\custom\Ninja\index.vue" />
+    <Content Include="src\components\generic\Button\index.vue" />
+    <Content Include="src\components\generic\index.js" />
+    <Content Include="src\components\generic\Input\index.vue" />
+    <Content Include="src\components\generic\Label\index.vue" />
+    <Content Include="src\components\generic\SectionContainer\index.vue" />
+    <Content Include="src\global-component-registry.js" />
+    <Content Include="src\main.js" />
+    <Content Include="src\pages\PageHome\index.vue" />
+    <Content Include="src\pages\PageHome\sections\BottomSection\index.vue" />
+    <Content Include="src\pages\PageHome\sections\FooterSection\index.vue" />
+    <Content Include="src\pages\PageHome\sections\TopSection\index.vue" />
+    <Content Include="src\pages\PageUrlResolver\index.vue" />
+    <Content Include="src\router\index.js" />
+    <Content Include="src\router\routes.js" />
+    <Content Include="src\utils\constants\components\custom.js" />
+    <Content Include="src\utils\constants\components\index.js" />
+    <Content Include="src\utils\constants\index.js" />
+    <Content Include="src\utils\constants\pages\home-page.js" />
+    <Content Include="src\utils\constants\pages\index.js" />
+    <Content Include="src\utils\constants\pages\url-resolver-page.js" />
+    <Content Include="vue.config.js" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

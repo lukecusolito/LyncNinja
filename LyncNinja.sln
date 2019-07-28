@@ -7,19 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.API", "LyncNinja.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{71E634E2-924A-45DC-B3A3-2337CA44EEA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyncNinja.Data", "LyncNinja.Data\LyncNinja.Data.csproj", "{C9E64A32-5EFC-4D41-A7BC-D2EBD1D9484A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.Data", "LyncNinja.Data\LyncNinja.Data.csproj", "{C9E64A32-5EFC-4D41-A7BC-D2EBD1D9484A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9DA2AA19-D29F-404B-8787-D1B9A54B224E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyncNinja.Services.DataService", "LyncNinja.Services.DataService\LyncNinja.Services.DataService.csproj", "{BF4E366E-AFA0-45AE-B9D3-3DDC95F57EBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.Services.DataService", "LyncNinja.Services.DataService\LyncNinja.Services.DataService.csproj", "{BF4E366E-AFA0-45AE-B9D3-3DDC95F57EBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyncNinja.Services.Interfaces", "LyncNinja.Services.Interfaces\LyncNinja.Services.Interfaces.csproj", "{E40F2600-77E0-4190-B450-F0B98D0FAD4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.Services.Interfaces", "LyncNinja.Services.Interfaces\LyncNinja.Services.Interfaces.csproj", "{E40F2600-77E0-4190-B450-F0B98D0FAD4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyncNinja.Common", "LyncNinja.Common\LyncNinja.Common.csproj", "{C2629703-1448-4ED5-84E9-5A918580045A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.Common", "LyncNinja.Common\LyncNinja.Common.csproj", "{C2629703-1448-4ED5-84E9-5A918580045A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyncNinja.Domain", "LyncNinja.Domain\LyncNinja.Domain.csproj", "{A8271270-8ED2-471D-ADA9-C48945F9389F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.Domain", "LyncNinja.Domain\LyncNinja.Domain.csproj", "{A8271270-8ED2-471D-ADA9-C48945F9389F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LyncNinja.Tests", "LyncNinja.Tests\LyncNinja.Tests.csproj", "{33665CBF-130E-4AC6-88DD-6582801F44BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LyncNinja.Tests", "LyncNinja.Tests\LyncNinja.Tests.csproj", "{33665CBF-130E-4AC6-88DD-6582801F44BC}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "LyncNinja.UI", "LyncNinja.UI\LyncNinja.UI.njsproj", "{A65CA397-7449-4FAC-B61F-FD483A163AAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{33665CBF-130E-4AC6-88DD-6582801F44BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33665CBF-130E-4AC6-88DD-6582801F44BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33665CBF-130E-4AC6-88DD-6582801F44BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65CA397-7449-4FAC-B61F-FD483A163AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65CA397-7449-4FAC-B61F-FD483A163AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65CA397-7449-4FAC-B61F-FD483A163AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65CA397-7449-4FAC-B61F-FD483A163AAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
