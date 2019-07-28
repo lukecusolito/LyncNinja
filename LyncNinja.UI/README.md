@@ -1,4 +1,4 @@
-# lync.ninya
+# lync.ninja
 
 ## Project setup
 ```
